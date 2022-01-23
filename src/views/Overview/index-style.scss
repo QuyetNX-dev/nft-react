@@ -1,0 +1,86 @@
+.overview{
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 32px;
+        align-items: center;
+        margin-bottom: 42px;
+        &--title{
+            font-size: 36px;
+        }
+    }
+    &__chart{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 32px;
+        .left{
+            width: calc(100% - 296px - 13px);
+            margin-right: 13px;
+            position: relative;
+            .text{
+                position: absolute;
+                top: 21px;
+                left: 21px;
+                z-index: 33;
+            }
+        }
+        .right-stats{
+            width: 296px;
+            .card{
+                height: 118px;
+                margin-bottom: 11px;
+                background: #181320;
+                border-radius: 16px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                h6{
+                    font-weight: normal;
+                    font-size: 16px;
+                    margin-bottom: 8px;
+                }
+                &:nth-child(1){
+                    h2{
+                        color: #1E5DFF;
+                    }
+                }
+                &:nth-child(2){
+                    h2{
+                        color: #FF8C04;
+                    }
+                }
+                &:nth-child(3){
+                    h2{
+                        color: #B511D0;
+                    }
+                }
+            }
+        }
+    }
+    &__slide{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 36px;
+        margin-right: 32px;
+        .left{
+            width: 185px;
+            margin-right: 28px;
+            img{
+                display: block;
+                width: 115px;
+                height: auto;
+                margin-bottom: 11px;
+            }
+            h3{
+                font-size: 24px;
+            }
+        }
+        .right{
+            width: calc(100% - 185px - 28px);
+        }
+    }
+}

@@ -1,0 +1,30 @@
+* {
+  outline: none;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+body{
+  // background-color: black !important;
+}
+.page-main{
+  display: flex;
+  &__nav{
+    width: 240px;
+  }
+  &__main{
+    width: calc(100% - 240px);
+    padding: 32px;
+    padding-right: 0;
+
+  }
+}
+
+#root {
+  font-family: "Square";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}

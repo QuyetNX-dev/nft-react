@@ -1,0 +1,12 @@
+.table{
+    .row{
+        border-bottom: solid 1px #343434;
+    }
+    .name{
+        display: flex;
+        align-items: center;
+        svg{
+            margin-right: 10px;
+        }
+    }
+}
